@@ -1,0 +1,152 @@
+/* Main Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #2e7d32; /* Deep earthy dark */
+  color: #ffffff;
+  padding: 0.75rem 2rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Logo */
+.navbar-logo {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color:  #ffffff;; /* Agricultural green */
+  text-decoration: none;
+}
+
+/* Center Navigation Links */
+.navbar-center {
+  display: flex;
+  gap: 2rem;
+}
+
+.navbar-center a {
+  color: #e0e0e0;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.navbar-center a:hover {
+  color: #7dc243;
+}
+
+.navbar-center a::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  height: 2px;
+  width: 0;
+  background-color: #7dc243;
+  transition: width 0.3s ease-in-out;
+}
+
+.navbar-center a:hover::after {
+  width: 100%;
+}
+
+/* Right User Section */
+.navbar-right {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* User Icon */
+.user-icon {
+  font-size: 1.4rem;
+  cursor: pointer;
+  color: #ffffff;
+  transition: color 0.3s ease;
+}
+
+.user-icon:hover {
+  color: #7dc243;
+}
+
+/* Dropdown Menu */
+.user-dropdown {
+  position: absolute;
+  top: 2.5rem;
+  right: 0;
+  background-color: #2e7d32;
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+  animation: dropdownFade 0.3s ease-in-out;
+}
+
+.user-dropdown button {
+  background: none;
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 1rem;
+  padding: 0.4rem 0;
+  text-align: left;
+  transition: color 0.3s;
+}
+
+.user-dropdown button:hover {
+  color: #ff5e5e; /* logout danger */
+}
+
+/* Hamburger Icon */
+.hamburger-icon {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 4px;
+}
+
+.hamburger-icon span {
+  width: 25px;
+  height: 3px;
+  background-color: #ffffff;
+  transition: background 0.3s;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .navbar-center {
+    position: absolute;
+    top: 65px;
+    right: 0;
+    background-color: #2e7d32;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 20%;
+    padding: 1rem 2rem;
+    display: none;
+  }
+
+  .navbar-center.open {
+    display: flex;
+  }
+
+  .hamburger-icon {
+    display: flex;
+  }
+}
+
+/* Animations */
+@keyframes dropdownFade {
+  from {
+    opacity: 0;
+    transform: translateY(-5px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

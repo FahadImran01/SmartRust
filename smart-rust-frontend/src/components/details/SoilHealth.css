@@ -1,0 +1,104 @@
+/* Light Mode Variables */
+:root {
+  --bg-color: #fdfdfd;
+  --text-color: #212529;
+  --section-bg: #ffffff;
+  --accent: #27ae60;
+  --header-bg: #eafaf1;
+  --tagline-color: #555;
+  --footer-color: #444;
+}
+
+/* Dark Mode */
+body.dark-mode {
+  --bg-color: #121212;
+  --text-color: #e0e0e0;
+  --section-bg: #1f1f1f;
+  --accent: #81c784;
+  --header-bg: #1b2c1b;
+  --tagline-color: #ccc;
+  --footer-color: #aaa;
+}
+
+.soilhealth-page {
+  padding: 2rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: linear-gradient(120deg, #e3f2fd, #a5d6a7);
+  color: var(--text-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.soilhealth-header {
+  text-align: center;
+  margin-bottom: 2rem;
+  padding: 1rem;
+  background: var(--header-bg);
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.soilhealth-header h2 {
+  font-size: 2.3rem;
+  margin-bottom: 0.5rem;
+}
+
+.tagline {
+  font-size: 1.1rem;
+  color: var(--tagline-color);
+}
+
+.soilhealth-section {
+  margin-bottom: 2.5rem;
+  background-color: var(--section-bg);
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.soilhealth-section h3 {
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+  border-left: 4px solid var(--accent);
+  padding-left: 0.75rem;
+}
+
+.soilhealth-section ul {
+  padding-left: 1.5rem;
+  list-style-type: disc;
+  margin-bottom: 1rem;
+}
+
+.soilhealth-section p {
+  font-size: 1.05rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.image-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.image-row img {
+  width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+  height: 160px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+}
+
+.image-row img:hover {
+  transform: scale(1.03);
+}
+
+.soilhealth-footer {
+  text-align: center;
+  font-style: italic;
+  color: var(--footer-color);
+  margin-top: 3rem;
+  border-top: 1px solid #ccc;
+  padding-top: 1rem;
+}

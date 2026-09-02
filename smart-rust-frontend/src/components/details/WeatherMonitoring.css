@@ -1,0 +1,93 @@
+:root {
+  --bg-color: #f5f9ff;
+  --text-color: #222;
+  --section-bg: #ffffff;
+  --accent-color: #2980b9;
+  --header-bg: #eaf3fc;
+  --footer-color: #666;
+}
+
+.weather-monitoring-page {
+  padding: 2rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: linear-gradient(120deg, #e3f2fd, #a5d6a7);
+  color: var(--text-color);
+}
+
+.weather-header {
+  text-align: center;
+  padding: 1.5rem;
+  background-color: var(--header-bg);
+  border-radius: 12px;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.weather-header h1 {
+  font-size: 2.4rem;
+  margin-bottom: 0.5rem;
+}
+
+.tagline {
+  font-size: 1.1rem;
+  color: #555;
+}
+
+.weather-section {
+  background-color: var(--section-bg);
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  margin-bottom: 2rem;
+}
+
+.weather-section h2 {
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+  color: var(--accent-color);
+}
+
+.weather-section p,
+.weather-section ul {
+  font-size: 1.05rem;
+  line-height: 1.6;
+}
+
+.weather-section ul {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+}
+
+.weather-image {
+  width: 100%;
+  height: 300px;
+ 
+  border-radius: 10px;
+  margin-top: 1rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+.weather-tools-images {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.weather-footer {
+  text-align: center;
+  color: var(--footer-color);
+  font-style: italic;
+  margin-top: 2rem;
+}
+.container{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+.datas{
+  width: 50%;
+}
+.images{
+  width: 50%;
+}

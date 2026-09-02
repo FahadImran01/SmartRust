@@ -1,0 +1,124 @@
+/* Root Styles */
+.fungicide-page {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: linear-gradient(120deg, #e3f2fd, #a5d6a7);
+  color: var(--text-color);
+  padding: 2rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Light & Dark Mode Variables */
+:root {
+  --bg-color: #ffffff;
+  --text-color: #1e1e1e;
+  --header-color: #2e7d32;
+  --section-bg: #f3f3f3;
+  --footer-bg: #e0f2f1;
+}
+
+body.dark-mode {
+  --bg-color: #121212;
+  --text-color: #f0f0f0;
+  --header-color: #81c784;
+  --section-bg: #1e1e1e;
+  --footer-bg: #263238;
+}
+
+/* Header */
+.fungicide-header {
+  text-align: center;
+  padding-bottom: 1rem;
+  border-bottom: 3px solid var(--header-color);
+}
+
+.fungicide-header h1 {
+  color: var(--header-color);
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.fungicide-header .tagline {
+  font-style: italic;
+  font-size: 1.2rem;
+  color: var(--text-color);
+}
+
+/* Section Styling */
+.fungicide-section {
+  background-color: var(--section-bg);
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin: 2rem 0;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+
+.fungicide-section h2 {
+  color: var(--header-color);
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+}
+
+.fungicide-section p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.fungicide-section ul {
+  margin-left: 1.5rem;
+  padding-left: 0;
+}
+
+.fungicide-section ul li {
+  margin-bottom: 0.6rem;
+  line-height: 1.5;
+}
+
+/* Image Row */
+.image-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1rem;
+  justify-content: center;
+}
+
+.image-row img {
+  width: 200px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.image-row img:hover {
+  transform: scale(1.05);
+}
+
+/* Footer */
+.fungicide-footer {
+  background-color: var(--footer-bg);
+  padding: 1rem;
+  margin-top: 3rem;
+  text-align: center;
+  font-size: 1rem;
+  border-radius: 8px;
+  color: var(--text-color);
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .image-row img {
+    width: 100%;
+    height: auto;
+  }
+
+  .fungicide-header h1 {
+    font-size: 2rem;
+  }
+
+  .fungicide-section h2 {
+    font-size: 1.5rem;
+  }
+}

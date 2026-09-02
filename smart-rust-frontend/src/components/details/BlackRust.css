@@ -1,0 +1,76 @@
+.black-rust-page {
+  padding: 2rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f5f8fa;
+  color: #222;
+}
+
+.black-header {
+  text-align: center;
+  background-color: #e0f7fa;
+  padding: 2rem;
+  border-radius: 12px;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.black-header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  color: #006064;
+}
+
+.black-tagline {
+  font-size: 1.1rem;
+  color: #004d40;
+}
+
+.black-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-bottom: 2rem;
+  background-color: #ffffff;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.text-column {
+  flex: 1;
+  min-width: 280px;
+}
+
+.image-column {
+  flex: 1;
+  min-width: 280px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.black-image {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 10px;
+  object-fit: cover;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.black-section h2 {
+  color: #006064;
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+}
+
+.black-section ul {
+  padding-left: 1.5rem;
+  line-height: 1.6;
+}
+
+.black-footer {
+  text-align: center;
+  margin-top: 2rem;
+  font-style: italic;
+  color: #555;
+}

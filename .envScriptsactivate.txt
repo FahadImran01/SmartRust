@@ -1,0 +1,6 @@
+.\env\Scripts\activate
+python manage.py startapp app_name
+python manage.py runserver
+npm start
+SELECT id, username, email, password FROM auth_user;
+python predict_api.py
